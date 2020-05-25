@@ -17,7 +17,7 @@ Digit::Digit(byte _a_pin, byte _b_pin, byte _c_pin, byte _d_pin, byte _e_pin, by
   }
 }
 
-void Digit::displayMessage(String str, int delay_ms) {
+void Digit::displayMessage(String str, unsigned int delay_ms) {
   for (int i = 0; i < str.length(); i++) {
     display((char) str[i]);
     delay(delay_ms);

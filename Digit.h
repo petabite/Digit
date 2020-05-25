@@ -7,7 +7,7 @@ class Digit
 {
     public:
         Digit(byte a_pin, byte b_pin, byte c_pin, byte d_pin, byte e_pin, byte f_pin, byte g_pin, byte dp_pin);
-        void Digit::displayMessage(String str, int delay_ms);
+        void displayMessage(String str, unsigned int delay_ms);
         void display(int num, boolean decimal = false);
         void display(char c, boolean period = false);
         void clear();
